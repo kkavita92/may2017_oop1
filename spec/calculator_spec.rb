@@ -10,3 +10,9 @@ describe Calculator do
     expect(subject.subtract(5, 2)).to eq 3
    end
 end
+
+describe Printer do
+  it 'prints things' do
+    expect(subject.print("This is a string !")).to eq "Output: This is a string !"
+  end
+end

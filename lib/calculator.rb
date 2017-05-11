@@ -8,3 +8,9 @@ class Calculator
     number - number_to_subtract 
   end
 end
+
+class Printer
+  def print(output)
+    "Output: #{output}"
+  end
+end
