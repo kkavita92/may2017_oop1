@@ -19,6 +19,13 @@ RSpec.describe 'a calculator' do
     expect(subtract(-1, -1)).to eq 0
     expect(subtract(0, Float::INFINITY)).to eq -Float::INFINITY
   end
+
+  describe Calculator do
+    it 'adds two numbers together' do
+      expect(subject.add(2, 3)).to eq 5
+      expect(subject.add(3, 1)).to eq 4
+    end
+  end
 end
 
 
