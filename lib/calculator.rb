@@ -5,7 +5,7 @@ class Calculator
   end
 
   def subtract(number, number_to_subtract)
-    number - number_to_subtract 
+    number - number_to_subtract
   end
 end
 
