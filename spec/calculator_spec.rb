@@ -15,6 +15,12 @@ describe Calculator do
   it 'subtracts one number from another' do
     expect(calculator.subtract(2, 1)).to eq 1
     expect(calculator.subtract(5, 2)).to eq 3
+    expect(calculator.subtract(2, 1)).to eq 1
+    expect(calculator.subtract(3, 1)).to eq 2
+    expect(calculator.subtract(0, 0)).to eq 0
+    expect(calculator.subtract(0, 1)).to eq -1
+    expect(calculator.subtract(-1, -1)).to eq 0
+    expect(calculator.subtract(0, Float::INFINITY)).to eq -Float::INFINITY
    end
 end
 
